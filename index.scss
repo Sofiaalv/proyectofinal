@@ -1,0 +1,23 @@
+@import "header";
+@import "footer";
+@import "body";
+@import "contact";
+@import "chart";
+@import "productos";
+
+$btn-primary: #c79393 !default;
+
+.centrado {
+    text-align: center;
+    padding: 30px;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.padding {
+    padding-top: 250px;
+}

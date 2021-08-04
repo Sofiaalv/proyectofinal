@@ -1,0 +1,29 @@
+header {
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__img{
+    width: 10%;
+    height: 10%;
+    margin: 10px;
+    transition: 2s;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #c98fa6;
+    align-items: center;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+    background-color:#d3a8b9;
+    color: white solid;
+    border-radius: 100px;
+}
+
+
