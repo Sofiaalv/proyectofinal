@@ -1,20 +1,21 @@
 header {
-  background-color: white;
-  -webkit-box-orient: horizontal;
+  background-color: #f5f4f4;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__img {
-  width: 10%;
-  height: 10%;
-  margin: 10px;
+  width: 7em;
+  height: 5em;
+  margin: 0.625em;
   -webkit-transition: 2s;
   transition: 2s;
+  padding-left: 1.25em;
 }
 
 .nav-link {
@@ -25,12 +26,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1em;
 }
 
 .nav-item:hover {
   text-decoration: none;
   background-color: #d3a8b9;
-  color: white solid;
+  color: white;
   border-radius: 100px;
 }
 
