@@ -164,6 +164,13 @@ p {
   text-align: center;
 }
 
+.medidas {
+  width: 70%;
+  height: auto;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
