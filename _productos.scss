@@ -1,5 +1,5 @@
 .product {
-	padding: 10px;
+	padding: 0.625em;
 	display: flex;
     flex-direction: column;
 	align-items: center;
@@ -9,7 +9,7 @@
 
 
 .product__zoom {
-    padding: 50px;
+    padding: 3.125em;
     transition: transform .2s;
     width: 300px;
     height: 300px;
@@ -17,6 +17,9 @@
 }
 
 .product__zoom:hover {
-    transform: scale(1.5); 
+    transform: scale(1.1)
 }
 
+.espacio{
+    padding: 2em;
+}

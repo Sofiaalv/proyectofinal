@@ -214,7 +214,7 @@ tr td {
 }
 
 .product {
-  padding: 10px;
+  padding: 0.625em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +230,7 @@ tr td {
 }
 
 .product__zoom {
-  padding: 50px;
+  padding: 3.125em;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
@@ -241,8 +241,12 @@ tr td {
 }
 
 .product__zoom:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.espacio {
+  padding: 2em;
 }
 
 .centrado {
@@ -262,6 +266,6 @@ tr td {
 }
 
 .padding {
-  padding-top: 250px;
+  padding-bottom: 2em;
 }
 /*# sourceMappingURL=index.css.map */
