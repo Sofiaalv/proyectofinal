@@ -202,6 +202,11 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.table {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 section table {
   margin: 10px;
 }
