@@ -235,8 +235,8 @@ tr td {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
-  width: 300px;
-  height: 300px;
+  width: 18.75em;
+  height: 30em;
   margin: 0 auto;
 }
 
@@ -245,13 +245,9 @@ tr td {
           transform: scale(1.1);
 }
 
-.espacio {
-  padding: 2em;
-}
-
 .centrado {
   text-align: center;
-  padding: 30px;
+  padding: 2em;
 }
 
 .fila {
@@ -266,6 +262,6 @@ tr td {
 }
 
 .padding {
-  padding-bottom: 2em;
+  padding-top: 2em;
 }
 /*# sourceMappingURL=index.css.map */
