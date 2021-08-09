@@ -115,10 +115,17 @@ h2 {
   font: sans-serif bold;
 }
 
-video {
+h3 {
+  color: #ad6783;
+  -webkit-transition: 2s;
+  transition: 2s;
+  font: sans-serif solid;
+}
+
+.video {
   width: 50%;
-  height: 50%;
-  padding: 40px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
@@ -135,9 +142,26 @@ p {
           flex-direction: column;
 }
 
-video {
-  display: block;
-  margin: 0 auto;
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 9em;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.bottom {
+  text-align: center;
+  border-right: 3px solid #a77d8e;
+}
+
+.bottom1 {
+  text-align: center;
 }
 
 input[type=text], select, textarea {
