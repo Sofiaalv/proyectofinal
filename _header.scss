@@ -1,18 +1,8 @@
 header {
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(250, 244, 244);
     flex-direction: column;
     justify-content: center;
     padding: 2em;
-}
-
-.header__img{
-    width: 7em;
-    height: 5em;
-    margin: 0.625em;
-    transition: 2s;
-    padding-left:1.25em;
-    display: block;
-    margin: 0 auto;
 }
 
 .nav-link {
@@ -33,4 +23,28 @@ header {
     box-shadow: 5px 10px 18px #888888;
 }
 
+svg text {
+    font-family: 'Roboto';
+    letter-spacing: 10px;
+    stroke: #d3a8b9;
+    font-size: 80px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+}
 
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset:  20%;
+        fill:#a77d8e ;
+    }
+
+    
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -20%;
+        fill: hsla(189, 68%, 75%,0%)
+    }
+    
+}
