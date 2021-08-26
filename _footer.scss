@@ -5,11 +5,18 @@ footer>div>a {
     font-size: 20px;
     color: black;
 }
+
+.a-hover{
+    color: white;
+    text-decoration: none;
+}
+
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 2.5em;
+    margin-top: 1em;
     width: 100%;
     background-color: rgb(245, 244, 244);
     font-family: 'Roboto';
@@ -28,7 +35,7 @@ footer{
 
 .footer__iconos{
     color: #c79393;
-    margin: 5px;
+    margin: 0.313em;
     height: 1em;
 }
 
