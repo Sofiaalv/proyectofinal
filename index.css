@@ -76,7 +76,7 @@ footer > div > a {
       align-self: center;
   text-decoration: none;
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 20px;
   color: black;
 }
 
@@ -96,7 +96,7 @@ footer {
   background-color: #f5f4f4;
   font-family: 'Roboto';
   font-style: italic;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .footer__redes {
@@ -120,6 +120,7 @@ footer {
 .footer__iconos {
   color: #c79393;
   margin: 5px;
+  height: 1em;
 }
 
 body {
