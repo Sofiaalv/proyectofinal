@@ -28,8 +28,8 @@ h3{
 }
 
 p {
-    color: black;
-
+    color: #ad6783;
+    font-size: 30px;
 }
 
 .body__colum {
@@ -56,5 +56,6 @@ p {
 .medidas{
     width: 70%;
     height: auto;
-    transition: 2s;
+    transition: 2s ;
+    border-radius: 15em;
 }
