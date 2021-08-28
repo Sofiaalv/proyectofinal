@@ -6,10 +6,6 @@ footer>div>a {
     color: $primary;
 }
 
-.a-hover{
-    color: white;
-    text-decoration: none;
-}
 
 footer{
     display: flex;
@@ -33,6 +29,10 @@ footer{
     color: #c79393;
 }
 
+.footer__redes:hover{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+}
 .footer__iconos{
     color: $primary;
     margin: 0.313em;
