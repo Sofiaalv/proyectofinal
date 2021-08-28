@@ -3,7 +3,7 @@ footer>div>a {
     text-decoration: none;
     font-family: 'Roboto';
     font-size: 20px;
-    color: black;
+    color: $primary;
 }
 
 .a-hover{
@@ -34,7 +34,7 @@ footer{
 }
 
 .footer__iconos{
-    color: #c79393;
+    color: $primary;
     margin: 0.313em;
     height: 1em;
 }

@@ -4,19 +4,19 @@ body {
 }
 
 h1 {
-    color: #ad6783;
+    color: $primary;
     transition: 2s;
     font: sans-serif bold;
 }
 
 h2 {
-    color: #ad6783;
+    color: $primary;
     transition: 2s;
     font: sans-serif bold;
 }
 
 h3{
-    color: #ad6783;
+    color: $primary;
     transition: 2s;
     font: sans-serif solid;
 }
@@ -28,7 +28,7 @@ h3{
 }
 
 p {
-    color: #ad6783;
+    color: $primary;
     font-size: 20px;
 }
 
@@ -47,11 +47,13 @@ p {
 
 .bottom{
     text-align: center;
-    border-right: 3px solid #a77d8e
+    border-right: 3px solid #a77d8e;
+    padding: 0.5em;
 }
 
 .bottom1{
     text-align: center;
+    padding: 1em;
 }
 
 .medidas{

@@ -9,13 +9,12 @@ header {
     text-decoration: none;
     font-family: 'Roboto';
     font-size: 20px;
-    color: #c98fa6;
+    color: $primary;
     align-items: center;
 }
 
 .nav-item:hover {
-    text-decoration: none;
-    color: white;
+    text-decoration-color: white;
     background-color:#d3a8b9;
     box-shadow: #a77d8e ;
     box-sizing: border-box;
@@ -47,4 +46,16 @@ svg text {
         fill: hsla(189, 68%, 75%,0%)
     }
     
+}
+
+@media only screen and (max-width:500px){
+    svg text {
+        font-family: 'Roboto';
+        letter-spacing: 10px;
+        stroke: #d3a8b9;
+        font-size: 40px;
+        font-weight: 700;
+        stroke-width: 3;
+        animation: textAnimate 5s infinite alternate;
+    }
 }
