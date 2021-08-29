@@ -201,7 +201,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 9em;
+  padding: 2em;
   -webkit-transition: 3s;
   transition: 3s;
 }
@@ -225,8 +225,40 @@ p {
   border-radius: 15em;
 }
 
-.pcelular {
-  margin-bottom: 0;
+@media only screen and (max-width: 1000px) {
+  section div div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40%;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0.625em;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  .bottom {
+    text-align: center;
+    border-right: 1px solid #a77d8e;
+    padding-right: 2em;
+  }
+  .bottom1 {
+    text-align: center;
+    padding: 0.1em;
+  }
+  section div div h3 {
+    font-size: 20px;
+  }
+  section div div p {
+    font: size 16px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -235,11 +267,12 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
     width: 15%;
+    margin-left: 5em;
   }
   .bottom {
     text-align: center;
     border-right: none;
-    padding: 0.5em;
+    padding: 0.2em;
   }
   .flex {
     display: -webkit-box;
@@ -249,7 +282,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5em;
+    padding: 0.2em;
   }
   section div div h3 {
     font-size: 15px;

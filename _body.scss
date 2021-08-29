@@ -41,7 +41,7 @@ p {
 .flex{
     display: flex;
     flex-direction: row;
-    padding: 9em;
+    padding: 2em;
     transition: 3s;
 }
 
@@ -63,27 +63,59 @@ p {
     border-radius: 15em;
 }
 
-.pcelular{
-    margin-bottom: 0;
+
+
+@media only screen and (max-width:1000px){
+
+    section div div {
+        justify-content: center;
+        width: 40%;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        padding: 0.625em;
+        transition: 3s;
+    }
+    
+    .bottom{
+        text-align: center;
+        border-right: 1px solid #a77d8e;
+        padding-right: 2em;
+    }
+    
+    .bottom1{
+        text-align: center;
+        padding: 0.1em;
+    }
+
+    section div div h3{
+        font-size: 20px;
+    }
+
+    section div div p {
+        font: size 16px;
+    }
+
 }
 
 @media only screen and (max-width:500px){
 
     section div div {
-    
         justify-content: center;
         width: 15%;
+        margin-left: 5em;
     }
     .bottom{
         text-align: center;
         border-right:none;
-        padding: 0.5em;
+        padding: 0.2em;
     }
 
     .flex{
         display: flex;
         flex-direction: column;
-        padding: 5em;
+        padding: 0.2em;
     }
 
     section div div h3{
