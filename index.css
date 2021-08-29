@@ -85,12 +85,6 @@ svg text {
     -webkit-animation: textAnimate 5s infinite alternate;
             animation: textAnimate 5s infinite alternate;
   }
-  section div div {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 50%;
-  }
 }
 
 footer > div > a {
@@ -229,6 +223,10 @@ p {
   -webkit-transition: 2s;
   transition: 2s;
   border-radius: 15em;
+}
+
+.pcelular {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 500px) {

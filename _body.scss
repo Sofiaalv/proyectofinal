@@ -63,6 +63,10 @@ p {
     border-radius: 15em;
 }
 
+.pcelular{
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width:500px){
 
     section div div {
@@ -86,6 +90,5 @@ p {
     section div div p {
         font-size:15px ;
     }
-
 
 }
