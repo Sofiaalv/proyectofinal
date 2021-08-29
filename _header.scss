@@ -11,6 +11,7 @@ header {
     font-size: 20px;
     color: $primary;
     align-items: center;
+    padding: 0.625em;
 }
 
 .nav-item:hover {
@@ -62,4 +63,11 @@ svg text {
         stroke-width: 3;
         animation: textAnimate 5s infinite alternate;
     }
+
+    section div div {
+        justify-content: center;
+        width: 50%;
+    }
+
+
 }
