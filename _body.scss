@@ -70,6 +70,7 @@ p {
 @media only screen and (max-width:500px){
 
     section div div {
+    
         justify-content: center;
         width: 15%;
     }
@@ -80,6 +81,8 @@ p {
     }
 
     .flex{
+        display: flex;
+        flex-direction: column;
         padding: 5em;
     }
 
