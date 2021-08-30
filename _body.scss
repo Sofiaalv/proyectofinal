@@ -53,7 +53,7 @@ p {
 
 .bottom1{
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .medidas{
@@ -73,6 +73,7 @@ p {
     }
     .flex{
         display: flex;
+        justify-content: center;
         flex-direction: row;
         padding: 0.625em;
         transition: 3s;
@@ -82,11 +83,13 @@ p {
         text-align: center;
         border-right: 1px solid #a77d8e;
         padding-right: 2em;
+        width: 100%;
     }
     
     .bottom1{
         text-align: center;
         padding: 0.1em;
+        width: 100%;
     }
 
     section div div h3{
@@ -97,6 +100,11 @@ p {
         font: size 16px;
     }
 
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width:500px){
@@ -104,16 +112,22 @@ p {
     section div div {
         justify-content: center;
         width: 15%;
-        margin-left: 5em;
     }
+
     .bottom{
         text-align: center;
         border-right:none;
         padding: 0.2em;
     }
+    
+    .bottom1{
+        text-align: center;
+        padding: 0.1em;
+    }
 
     .flex{
         display: flex;
+        justify-content: center;
         flex-direction: column;
         padding: 0.2em;
     }
@@ -125,5 +139,7 @@ p {
     section div div p {
         font: size 12px;
     }
+
+  
 
 }
