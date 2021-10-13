@@ -1,6 +1,6 @@
 let Ubicacion = prompt("Ingresa tu pais").toLowerCase; 
 
-if (Ubicacion = "Argentina") {
+if (Ubicacion != "Argentina") {
     alert("Bienvenido a Alsodeco")
     console.log("Ubicacion aceptada");
 } 
