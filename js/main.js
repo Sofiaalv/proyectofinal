@@ -93,3 +93,12 @@ function mostrarCarrito(producto){
 
 
 console.log (carrito);
+
+///MAPA///
+
+$("#maps").hide();
+
+$("#btnMaps").click(function(){
+    
+    $("#maps").toggle(2000);
+});

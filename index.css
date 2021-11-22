@@ -342,6 +342,15 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.btnMaps {
+  background-color: #c79393;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,6 +408,12 @@ tr td {
 .product__zoom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#carrito {
+  width: 30%;
+  background-color: #868585;
+  height: 100vh;
 }
 
 * {
