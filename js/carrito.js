@@ -1,4 +1,5 @@
 const Clickbutton = document.querySelectorAll('.botonCompra')
+const tbody = document.querySelector('.tbody')
 let carrito = []
 
 
@@ -28,5 +29,22 @@ function addItemCarrito(newItem){
 }
 
 function renderCarrito(){
-    console.log(carrito)
+    tbody.innerHTML=''
+    carrito.map(item =>{
+        const tr = document.createElement('tr')
+        tr.classList.add('ItemCarrito')
+        const Content = `              
+        <th scope="row">1</th>
+        <td class="table__productos">
+            <h3 class="title">${item.title}</h3>
+        </td>
+        <td class="table__precio">${item.precio} </td>
+        <td class="table__cantidad">
+            <input type="number" min="1" value="${item.cantidad}">
+            <button class="delete bnt btn-danger">x</button>
+        </td>
+        `
+        tr.innerHTML = Content;
+        tbody.appendChild(tr)
+    })
 }
