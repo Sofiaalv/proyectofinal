@@ -351,31 +351,26 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-.table {
+.carrito {
+  min-height: 90vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-section table {
-  margin: 10px;
-}
-
-thead th {
-  color: #b15e38;
-  background-color: #fcfcfc;
-  font-family: 'Roboto';
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
   font-size: 16px;
-}
-
-tr td {
-  color: black;
-  font-family: 'Roboto';
-  font-style: italic;
-  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .product {
@@ -401,19 +396,12 @@ tr td {
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   width: 18.75em;
-  height: 30em;
   margin: 0 auto;
 }
 
 .product__zoom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-#carrito {
-  width: 30%;
-  background-color: #868585;
-  height: 100vh;
 }
 
 * {

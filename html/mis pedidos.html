@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <title>Carrito</title>
-    <link rel="shortcut icon" href="./assets/icono2.png">
+
 
 </head>
 <body>
@@ -30,26 +30,60 @@
                     <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Productos.html">Productos</a>
+                    <a class="nav-link" href="./productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./About us.html">Acerca de nosotros</a>
+                    <a class="nav-link" href="./about us.html">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Carrito.html">Carrito</a>
+                    <a class="nav-link" href="./mis pedidos.html">Carrito</a>
                 </li>
             </ul>
         </div>
     </header>
     
     <section>
-        <h1 class="centrado">Mis pedidos</h1>
+        <h1 class="centrado">Mi Carrito</h1>
     </section>
-    <section>
-        <h3 class="centrado">Historial vacio</h3>
+    <section class="carrito">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="table__productos">
+                    <img src="" alt="">
+                    <h3 class="title"></h3>
+                </td>
+                <td class="table__precio">$ </td>
+                <td class="table__cantidad">
+                    <input type="number" min="1" value="1">
+                    <button class="delete bnt btn-danger">x</button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+
+        <div class="row mx-4">
+            <div class="col">
+                <h3 class="cartTotal">Total 0</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-success">COMPRAR</button>
+            </div>
+        </div>
+
+
     </section>
 
 

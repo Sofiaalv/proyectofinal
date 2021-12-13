@@ -1,50 +1,32 @@
-/// PRODUCTOS ///
-
-let botonCompra = document.querySelectorAll(".botonCompra");
-let carrito = [];
-console.log( botonCompra );
+const Clickbutton = document.querySelectorAll('.botonCompra')
+let carrito = []
 
 
-for (let boton of botonCompra){
-    boton.addEventListener("click", agregarCarrito);
+Clickbutton.forEach(btn => {
+    btn.addEventListener('click', addToCarritoItem)
+})
 
-}
-
-function agregarCarrito(e){
+function addToCarritoItem(e){
+    const botonCompra = e.target
+    const item = botonCompra.closest('.card')
+    const itemTitle = item.querySelectorAll('.card-title').textContent;
+    const itemPrice = item.querySelectorAll('.precio').textContent;
     
-    let hijo = e.target;
-    let padre = hijo.parentNode.parentNode;
-    let nombreProducto = padre.querySelector("h2").textContent;
-    let img = padre.querySelector("img").src;
-    let precio = padre.querySelector("p").textContent;
 
-
-    const producto = {
-
-        nombre: nombreProducto,
-        img: img,
-        precio: precio,
-        cantidad: 1
-
+    const newItem= {
+        title: itemTitle,
+        precio: itemPrice,
+        cantidad:1
     }
 
+    addItemCarrito(newItem)
+}    
 
-    carrito.push(producto);
-    mostrarCarrito(producto);
-
+function addItemCarrito(newItem){
+    carrito.push(newItem)
+    renderCarrito()
 }
 
-function mostrarCarrito(producto){
-    let fila = document.createElement("tr");
-    fila.innerHTML = ` <td>${producto.nombre}</td>
-                        <td>${producto.cantidad}</td>
-                        <td>${producto.precio}</td>
-                        <td><button class="btn btn-danger">Eliminar</button></td>
-                    `
-    let tbody = document.getElementById("tbody");
-    
-    tbody.appendChild(fila);
+function renderCarrito(){
+    console.log(carrito)
 }
-
-
-console.log (carrito);

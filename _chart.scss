@@ -7,25 +7,24 @@
     cursor: pointer;
 } 
 
-.table{
+.carrito{
+    min-height: 90vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.table__productos{
     display: flex;
-    justify-content: center;
 }
 
-section table {
-    margin: 10px;
-}
 
-thead th {
-    color: rgb(177, 94, 56);
-    background-color: rgb(252, 252, 252);
-    font-family: 'Roboto';
-    font-size: 16px;
-}
-
-tr td {
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto';
-    font-style:italic;
-    font-size: 16px;
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px ;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
