@@ -1,18 +1,18 @@
-const Clickbutton = document.querySelectorAll('.botonCompra')
+let botonCompra = document.querySelectorAll('.botonCompra')
 const tbody = document.querySelector('.tbody')
 let carrito = []
 
 
-Clickbutton.forEach(btn => {
+botonCompra.forEach(btn => {
     btn.addEventListener('click', addToCarritoItem)
 })
 
 function addToCarritoItem(e){
-    const botonCompra = e.target
-    const item = botonCompra.closest('.card')
-    const itemTitle = item.querySelectorAll('.card-title').textContent;
-    const itemPrice = item.querySelectorAll('.precio').textContent;
     
+    let hijo = e.target;
+    let padre = hijo.parentNode.parentNode;
+    let itemTitle = padre.querySelector("h2").textContent;
+    let itemPrice = padre.querySelector("span").textContent;
 
     const newItem= {
         title: itemTitle,
@@ -82,7 +82,7 @@ function carritoTotal(){
     let total=0;
     const cartTotal = document.querySelector('.cartTotal')
     carrito.forEach((item) => {
-        const precio = Number(item.precio.replace('$',''))
+        const precio = Number(item.precio.replace('$',''));
         total = total + precio*item.cantidad
 
     })
