@@ -345,10 +345,15 @@ input[type=submit]:hover {
 .btnMaps {
   background-color: #c79393;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.btnMaps:hover {
+  background-color: #ebdbdb;
+  color: #c79393;
 }
 
 .carrito {
@@ -404,6 +409,10 @@ input[type=submit]:hover {
           transform: scale(1.1);
 }
 
+.hide, .remove {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -427,5 +436,10 @@ input[type=submit]:hover {
 
 .padding {
   padding-top: 2em;
+}
+
+.clima {
+  text-align: center;
+  padding-bottom: 3rem;
 }
 /*# sourceMappingURL=index.css.map */
